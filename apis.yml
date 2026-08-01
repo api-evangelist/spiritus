@@ -1,7 +1,24 @@
 aid: spiritus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spiritus.png
 name: Spiritus
-description: Spiritus is a company surfaced as a portfolio company of khosla-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Spiritus Technologies is a climate-tech company building low-cost direct air capture (DAC)
+  technology that removes carbon dioxide from the atmosphere. Its core carbon-dioxide-removal system and
+  its Orchard Power product (pairing DAC with waste heat for net-zero power) target dramatically lower
+  energy use and capital cost than existing DAC. Backed by Khosla Ventures, Aramco Ventures, and Mitsubishi,
+  with carbon-removal customers including Shopify, Stripe, and Frontier. Based in White Rock, New Mexico.
+  This is a physical carbon-removal hardware company and does not currently publish a public API,
+  SDK, or developer platform.
 url: https://raw.githubusercontent.com/api-evangelist/spiritus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Climate
+- Carbon Removal
+- Direct Air Capture
+- Clean Energy
+- Sustainability
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spiritus-domain-security.yml
 - type: Website
-  url: https://spiritus.com/en
+  url: https://spiritus.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
