@@ -1,0 +1,42 @@
+edges:
+- partner_name: CDR.fyi
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: third-party
+  evidence: https://www.cdr.fyi/supplier/spiritus
+  category: Carbon removal supplier
+  contract_reference:
+    register: CDR.fyi supplier pages (cdr.fyi/supplier/<slug>)
+    spec_file: null
+    standard: Durable carbon dioxide removal (CDR.fyi tracker)
+    role: cdr-fyi-tracked-supplier
+    registered_name: Spiritus
+    website: https://spiritus.com/en
+    matched_domain: spiritus.com
+    matched_by: domain
+    identity_source: the supplier website stated on its CDR.fyi page (no lookup)
+    signal_note: 'participation only: a third-party tracker of CDR orders and deliveries certifies nothing; tonnes,
+      orders and purchasers are never recorded (purchasers are buyers: held)'
+    detected_by: sweep-carbon-environment.py
+    detected: '2026-10-19'
+  detected_by: sweep-carbon-environment.py
+  first_seen: '2026-10-19'
+generated: '2026-10-19'
+method: searched
+source:
+- https://edge.isometric.com/graphql
+- https://public-api.goldstandard.org/projects?page=1&size=100
+- https://puro.earth/puro_facility-sitemap.xml
+- https://www.cdr.fyi/sitemap.xml
+- https://www.icvcm.org/assessment-status/
+- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
+checked:
+- https://edge.isometric.com/graphql
+- https://public-api.goldstandard.org/projects?page=1&size=100
+- https://puro.earth/puro_facility-sitemap.xml
+- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
+- https://www.cdr.fyi/sitemap.xml
+- https://www.icvcm.org/assessment-status/
